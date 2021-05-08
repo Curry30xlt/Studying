@@ -8,14 +8,14 @@ def szys():
 
     if f == 0:  # 加法
         result = n1 + n2
-    elif f == 1:  # 减法，要先比较大小，防止输出负数
+    elif f == 1:  # 减法
         n1, n2 = max(n1, n2), min(n1, n2)
         result = n1 - n2
 
     elif f == 2:  # 乘法
         result = n1 * n2
 
-    elif f == 3:  # 除法，要比较大小，并循环取整除
+    elif f == 3:  # 除法
         n1, n2 = max(n1, n2), min(n1, n2)
         while n1 % n2 != 0:
             n1 = random.randint(1, 10)
